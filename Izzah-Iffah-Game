@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Izzah & Iffah's Animal Sound Game</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #fff8dc;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    h1 {
+      color: #ff69b4;
+    }
+    .animal {
+      display: inline-block;
+      margin: 20px;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+      border-radius: 20px;
+      border: 3px solid #ffb6c1;
+    }
+    p {
+      color: #333;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 Izzah & Iffah’s Animal Sound Game 💖</h1>
+  <p>Tap an animal to hear its sound!</p>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Cow_icon.png" onclick="playSound('cow')" alt="Cow">
+    <p>Cow</p>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.png" onclick="playSound('cat')" alt="Cat">
+    <p>Cat</p>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Rubber_Duck_icon.png" onclick="playSound('duck')" alt="Duck">
+    <p>Duck</p>
+  </div>
+
+  <audio id="cow" src="https://www.fesliyanstudios.com/play-mp3/6559"></audio>
+  <audio id="cat" src="https://www.fesliyanstudios.com/play-mp3/6534"></audio>
+  <audio id="duck" src="https://www.fesliyanstudios.com/play-mp3/6546"></audio>
+
+  <script>
+    function playSound(animal) {
+      document.getElementById(animal).play();
+    }
+  </script>
+
+</body>
+</html>
